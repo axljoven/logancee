@@ -4,6 +4,21 @@ html, body {
   font-weight: 400;
   font-size: 16px; }
 
+.swiper-container .custom-swiper-button-prev,
+.swiper-container .custom-swiper-button-next {
+  position: absolute;
+  top: 45%; }
+  .swiper-container .custom-swiper-button-prev a,
+  .swiper-container .custom-swiper-button-next a {
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    text-orientation: upright; }
+.swiper-container .custom-swiper-button-prev {
+  left: 20px; }
+.swiper-container .custom-swiper-button-next {
+  right: 20px; }
+
 #site-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +41,8 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 1000; }
   #site-header .brand,
   #site-header .burger-menu {
     color: white; }
@@ -37,5 +53,27 @@ html, body {
     text-transform: uppercase; }
 
 .banner {
-  height: 500px;
-  background-color: #000000; }
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 600px;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch; }
+
+
