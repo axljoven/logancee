@@ -1,23 +1,61 @@
-html, body {
+*, html, body {
   color: #999999;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 400;
-  font-size: 16px; }
+  font-size: 15px; }
 
-.swiper-container .custom-swiper-button-prev,
-.swiper-container .custom-swiper-button-next {
+.swiper-container .swiper-slide-contents {
+  width: 40%; }
+.swiper-container .swiper-slide {
+  background-color: #000000; }
+
+.swiper-pagination {
+  position: absolute;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 55px;
+  left: 0;
+  right: 0; }
+  .swiper-pagination-bullet {
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .swiper-pagination-bullet-active {
+    background-color: white; }
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
   position: absolute;
   top: 45%; }
-  .swiper-container .custom-swiper-button-prev a,
-  .swiper-container .custom-swiper-button-next a {
+  .custom-swiper-button-prev a,
+  .custom-swiper-button-prev a:link,
+  .custom-swiper-button-prev a:focus,
+  .custom-swiper-button-prev a:visited,
+  .custom-swiper-button-next a,
+  .custom-swiper-button-next a:link,
+  .custom-swiper-button-next a:focus,
+  .custom-swiper-button-next a:visited {
+    display: block;
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: tb-lr;
     writing-mode: vertical-lr;
-    text-orientation: upright; }
-.swiper-container .custom-swiper-button-prev {
-  left: 20px; }
-.swiper-container .custom-swiper-button-next {
-  right: 20px; }
+    text-orientation: upright;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+    font-size: 0.7rem;
+    font-weight: 700; }
+  .custom-swiper-button-prev a:hover,
+  .custom-swiper-button-next a:hover {
+    color: rgba(255, 255, 255, 0.6); }
+
+.custom-swiper-button-prev {
+  left: 40px; }
+
+.custom-swiper-button-next {
+  right: 40px; }
 
 #site-header {
   display: -webkit-box;
@@ -47,7 +85,6 @@ html, body {
   #site-header .burger-menu {
     color: white; }
   #site-header .brand {
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 1rem;
     text-transform: uppercase; }
@@ -75,5 +112,17 @@ html, body {
   align-items: center;
   -ms-flex-line-pack: stretch;
   align-content: stretch; }
+  .banner_preheader {
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 60px; }
+  .banner_header {
+    font-size: 4.5rem;
+    color: white;
+    text-transform: uppercase;
+    line-height: 0.85; }
+  .banner_content {
+    font-size: 1rem; }
 
 

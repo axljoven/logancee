@@ -1,25 +1,84 @@
 //
+// Variables ------------------------------------------------------------------
+//
+
+$offset: 40px
+
+//
 // Swiper ---------------------------------------------------------------------
 //
 
 .swiper-container
     //
-    // Controls ---------------------------------------------------------------
+    // CUSTOM: Not included in the default SwiperJS
+    // Slider contents container to make the width 50%
     //
 
-    $offset: 20px
+    .swiper-slide-contents
+        width: 40%
 
-    .custom-swiper-button-prev,
-    .custom-swiper-button-next
-        position: absolute
-        top: 45%
+    //
+    // Single Slide
+    //
 
-        a
-            writing-mode: vertical-lr
-            text-orientation: upright
+    .swiper-slide
+        background-color: $color-accent
 
-    .custom-swiper-button-prev
-        left: $offset
+//
+// Pagination -----------------------------------------------------------------
+//
 
-    .custom-swiper-button-next
-        right: $offset
+.swiper-pagination
+    position: absolute
+    width: 500px
+    margin-left: auto
+    margin-right: auto
+    bottom: $offset + 15
+    left: 0
+    right: 0
+
+    //
+    // Default bullets
+    //
+
+    &-bullet
+        margin: 0 5px
+        background-color: rgba(255, 255, 255, 0.8)
+
+    //
+    // Active bullet
+    //
+
+    &-bullet-active
+        background-color: white
+
+//
+// Swiper Controls ------------------------------------------------------------
+//
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next
+    position: absolute
+    top: 45%
+
+    a,
+    a:link,
+    a:focus,
+    a:visited
+        display: block
+        writing-mode: vertical-lr
+        text-orientation: upright
+        color: rgba(255, 255, 255, 0.3)
+        text-transform: uppercase
+        transition: color 0.2s
+        font-size: 0.7rem
+        font-weight: $font-bold
+
+    a:hover
+        color: rgba(255, 255, 255, 0.6)
+
+.custom-swiper-button-prev
+    left: $offset
+
+.custom-swiper-button-next
+    right: $offset
