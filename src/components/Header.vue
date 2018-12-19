@@ -10,7 +10,7 @@
 
 		<!-- Hamburger Menu -->
 		<div class="burger-menu-container">
-			<a href="javascript:void(0)" class="burger-menu"><i class="large bars icon"></i></a>
+			<a href="javascript:void(0)" class="burger-menu"><span class="fas fa-bars fa-lg"></span></a>
 		</div>
 
 

@@ -42,9 +42,9 @@
     text-orientation: upright;
     color: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
-    -webkit-transition: color 0.2s;
-    -o-transition: color 0.2s;
-    transition: color 0.2s;
+    -webkit-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
     font-size: 0.7rem;
     font-weight: 700; }
   .custom-swiper-button-prev a:hover,
@@ -56,6 +56,10 @@
 
 .custom-swiper-button-next {
   right: 40px; }
+
+.fa, .fas {
+  font-family: "Font Awesome 5 Free" !important;
+  color: inherit; }
 
 #site-header {
   display: -webkit-box;
@@ -93,7 +97,7 @@
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
-  height: 600px;
+  height: 700px;
   background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,5 +128,36 @@
     line-height: 0.85; }
   .banner_content {
     font-size: 1rem; }
+  .banner_arrow {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .banner_arrow a {
+      border: 2px solid white;
+      border-radius: 50px;
+      margin-top: 50px;
+      padding: 3px 2px 2px 2px;
+      width: 20px;
+      height: 20px;
+      z-index: 100;
+      color: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s; }
+    .banner_arrow:hover a {
+      -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+      transform: translateY(5px); }
 
 

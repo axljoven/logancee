@@ -6,7 +6,7 @@
     position: relative
     padding-top: 40px
     padding-bottom: 40px
-    height: 600px
+    height: 700px
     background-color: $color-accent
     display: flex
     flex-direction: row
@@ -41,3 +41,35 @@
 
     &_content
         font-size: 1rem
+
+    //
+    // Arrow
+    //
+
+    &_arrow 
+        display: inline-block
+        margin-top: 10px
+        margin-bottom: 10px
+
+        a
+            $dimension: 20px
+            
+            border: 2px solid white
+            border-radius: 50px
+            margin-top: 50px
+            padding: 3px 2px 2px 2px 
+            width: $dimension
+            height: $dimension
+            z-index: 100
+            color: white
+
+            display: flex
+            align-content: center
+            justify-content: center
+            align-items: center
+
+            transition: all 0.4s
+            
+        &:hover
+            a
+                transform: translateY(5px)

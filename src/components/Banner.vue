@@ -14,6 +14,12 @@
 							<h2 class="banner_preheader">{{ slide.preheader }}</h2>
 							<h3 class="banner_header">{{ slide.header }}</h3>
 							<p class="banner_content">{{ slide.content }}</p>
+
+							<!-- Chevron Arrow -->
+							<div class="banner_arrow">
+								<a v-bind:href="slide.link"><span class="fas fa-chevron-down"></span></a>
+							</div>
+
 						</div>
 					</div>
 
@@ -57,22 +63,26 @@
 					{
 						preheader : "Welcome",
 						header    : "Logan Creative Studio",
-						content   : "Best digital solutions for your business! Let we bring amazing for you."
+						content   : "Best digital solutions for your business! Let we bring amazing for you.",
+						link	  : "#"
 					},
 					{
 						preheader : "Welcome 2",
 						header    : "Web Design Philippines",
-						content   : "Best digital solutions for your business! Let we bring amazing for you."
+						content   : "Best digital solutions for your business! Let we bring amazing for you.",
+						link	  : "#"
 					},
 					{
 						preheader : "Welcome 3",
 						header    : "VueJS and Firebase",
-						content   : "Best digital solutions for your business! Let we bring amazing for you."
+						content   : "Best digital solutions for your business! Let we bring amazing for you.",
+						link	  : "#"
 					},
 					{
 						preheader : "Welcome 4",
 						header    : "Future of Javascript Development",
-						content   : "Best digital solutions for your business! Let we bring amazing for you."
+						content   : "Best digital solutions for your business! Let we bring amazing for you.",
+						link	  : "#"
 					}
 				]
 			};
