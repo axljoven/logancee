@@ -2,13 +2,13 @@
 // Sliders --------------------------------------------------------------------
 //
 
-function swiper_init( ) {
+function swiper_init() {
 
     //
     // Banner slider ----------------------------------------------------------
     //
 
-    var mySwiper = new Swiper( '.banner .swiper-container', {
+    var mySwiper = new Swiper('.banner .swiper-container', {
         spaceBetween: 30,
         effect: 'fade',
         pagination: {
@@ -19,7 +19,7 @@ function swiper_init( ) {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-    } );
+    });
 
 
 
@@ -27,14 +27,14 @@ function swiper_init( ) {
     // Custom controls --------------------------------------------------------
     //
 
-    var prevButton = document.querySelector( '.custom-swiper-button-prev a' );
-    var nextButton = document.querySelector( '.custom-swiper-button-next a' );
+    var prevButton = document.querySelector('.custom-swiper-button-prev a');
+    var nextButton = document.querySelector('.custom-swiper-button-next a');
 
-    $( prevButton ).on( 'click', function( ) {
-        mySwiper.slidePrev( );
-    } );
+    $(prevButton).on('click', function() {
+        mySwiper.slidePrev();
+    });
 
-    $( nextButton ).on( 'click', function( ) {
-        mySwiper.slideNext( );
-    } );
+    $(nextButton).on('click', function() {
+        mySwiper.slideNext();
+    });
 }

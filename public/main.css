@@ -79,7 +79,7 @@
   align-items: center;
   -ms-flex-line-pack: stretch;
   align-content: stretch;
-  padding: 20px;
+  padding: 50px 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -97,7 +97,7 @@
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
-  height: 700px;
+  height: 100vh;
   background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,5 +159,9 @@
       -webkit-transform: translateY(5px);
       -ms-transform: translateY(5px);
       transform: translateY(5px); }
+
+.about-us {
+  padding-top: 250px;
+  padding-bottom: 250px; }
 
 

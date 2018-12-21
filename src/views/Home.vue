@@ -3,7 +3,8 @@
 
 
 
-		<Banner/>
+		<Banner />
+		<Content />
 
 
 
@@ -16,6 +17,7 @@
 	//
 
 	import Banner from "@/components/Banner.vue";
+	import Content from "@/components/Home/Content.vue";
 
 
 	//
@@ -26,6 +28,7 @@
 		name: "home",
 		components: {
 			Banner,
+			Content
 		},
 	};
 </script>
