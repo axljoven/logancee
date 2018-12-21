@@ -1,0 +1,27 @@
+{
+    "slides": [{
+            "preheader": "Welcome",
+            "header": "Logan Creative Studio",
+            "content": "Best digital solutions for your business! Let we bring amazing for you.",
+            "link": "#"
+        },
+        {
+            "preheader": "Welcome 2",
+            "header": "Web Design Philippines",
+            "content": "Best digital solutions for your business! Let we bring amazing for you.",
+            "link": "#"
+        },
+        {
+            "preheader": "Welcome 3",
+            "header": "VueJS and Firebase",
+            "content": "Best digital solutions for your business! Let we bring amazing for you.",
+            "link": "#"
+        },
+        {
+            "preheader": "Welcome 4",
+            "header": "Future of Javascript Development",
+            "content": "Best digital solutions for your business! Let we bring amazing for you.",
+            "link": "#"
+        }
+    ]
+}
