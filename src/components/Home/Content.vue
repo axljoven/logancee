@@ -4,10 +4,24 @@
         <!-- About Us -->
         <div v-for="(content, index) in contents" :key="index" class="section">
             <div class="ui container">
-               <h2 class="section-preheader">{{ content.section }}</h2>
-               <h3 class="section-header">{{ content.header }}</h3>
-               <p class="section-text">{{ content.text }}</p>
-               <image :src="@/src/images/ + content.image" />
+                <div class="ui stackable two column relaxed grid">
+                    
+                    <!-- Contents -->
+                    <div class="column">
+                        <h2 class="section-preheader">{{ content.section }}</h2>
+                        <h3 class="section-header">{{ content.header }}</h3>
+                        <p class="section-text">{{ content.text }}</p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="column">
+                        <img v-if="content.image" :src="require(`@/assets/images/${content.image}`)" class="ui fluid image" />
+                    </div>
+
+
+                </div>
+                    
+               
             </div>
         </div>
 
