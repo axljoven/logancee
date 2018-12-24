@@ -4,7 +4,7 @@
         <!-- About Us -->
         <div v-for="(content, index) in contents" :key="index" class="section">
             <div class="ui container">
-                <div class="ui stackable two column relaxed grid">
+                <div class="ui stackable two column relaxed grid section-container">
                     
                     <!-- Contents -->
                     <div class="column">
@@ -15,7 +15,8 @@
 
                     <!-- Image -->
                     <div class="column">
-                        <img v-if="content.image" :src="require(`@/assets/images/${content.image}`)" class="ui fluid image" />
+                        <img v-if="content.image" :src="require(`@/assets/images/${content.image}`)" 
+                            class="section-image ui fluid image" />
                     </div>
 
 

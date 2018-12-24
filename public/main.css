@@ -168,18 +168,24 @@ p {
 .about-us {
   padding-top: 175px;
   padding-bottom: 175px; }
-  .about-us .section-preheader {
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
-    margin-bottom: 40px; }
-  .about-us .section-header {
-    color: #000000;
-    font-weight: 700;
-    font-size: 3.4rem;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    line-height: 1.1; }
-  .about-us .section-text {
-    padding-left: 120px; }
+  .about-us .section {
+    margin-bottom: 100px; }
+    .about-us .section:last-child {
+      margin-bottom: 0; }
+    .about-us .section-preheader {
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.5rem;
+      text-transform: uppercase;
+      margin-bottom: 40px; }
+    .about-us .section-header {
+      color: #000000;
+      font-weight: 700;
+      font-size: 3.4rem;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      line-height: 1.1; }
+    .about-us .section-text {
+      padding-left: 120px; }
+    .about-us .section-image {
+      padding-left: 30%; }
