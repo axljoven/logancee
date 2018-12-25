@@ -1,12 +1,9 @@
 <template>
 	<div class="home">
 
-
-
 		<Banner />
 		<Content />
-
-
+		<RecentWorks />
 
   	</div>
 </template>
@@ -18,7 +15,7 @@
 
 	import Banner from "@/components/Banner.vue";
 	import Content from "@/components/Home/Content.vue";
-
+	import RecentWorks from "@/components/Home/RecentWorks";
 
 	//
 	// Export -----------------------------------------------------------------
@@ -28,7 +25,8 @@
 		name: "home",
 		components: {
 			Banner,
-			Content
+			Content,
+			RecentWorks
 		},
 	};
 </script>

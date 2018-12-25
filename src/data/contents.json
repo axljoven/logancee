@@ -1,5 +1,6 @@
 {
-    "contents": [{
+    "contents": [
+        {
             "section": "About Us",
             "header": "Think out of the box.",
             "text": "If you never venture outside the box, you will probably not be creative. But if you never get inside the box, you will certainly be stupid. Don't think outside the box, think like there is No Box!",
@@ -7,7 +8,7 @@
         },
         {
             "section": "What we do",
-            "header": "Deer Agency Website",
+            "header": "Deer Agency Website.",
             "text": "This is my big project for Deer Agency - Web Design. Deer Agency is a agency creative and art, focusing on business art services such as : Photography, Print, Interior, Product Design and Recording music.",
             "image": "deer-agency.jpg"
         }

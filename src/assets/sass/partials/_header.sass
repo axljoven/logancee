@@ -15,20 +15,39 @@
     left: 0
     right: 0
     z-index: 1000
+    @extend %transition
+
 
     //
-    // LOGO / BRAND and BURGER MENU -------------------------------------------
+    // LOGO / BRAND and BURGER MENU 
     //
 
     .brand,
     .burger-menu
         color: white
+        @extend %transition
+
 
     //
-    // LOGO / BRAND -----------------------------------------------------------
+    // LOGO / BRAND 
     //
 
     .brand
         font-weight: $font-bold
         font-size: 1rem
         text-transform: uppercase
+
+
+//
+// Scrolled / with background -------------------------------------------------
+//
+
+#site-header.filled
+    padding: 20px 50px
+    background-color: white
+    color: $color-accent
+    @extend %shadow
+
+    .brand,
+    .burger-menu
+        color: $color-accent

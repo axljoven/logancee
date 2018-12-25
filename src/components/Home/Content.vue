@@ -4,30 +4,32 @@
         <!-- About Us -->
         <div v-for="(content, index) in contents" :key="index" class="section">
             <div class="ui container">
-                <div class="ui stackable two column relaxed grid section-container">
+                <div class="section-container">
                     
                     <!-- Contents -->
-                    <div class="column">
-                        <h2 class="section-preheader">{{ content.section }}</h2>
-                        <h3 class="section-header">{{ content.header }}</h3>
+                    <div class="section-contents">
+                        <h2 class="section-preheader preheader">{{ content.section }}</h2>
+                        <h3 class="section-header header">{{ content.header }}</h3>
                         <p class="section-text">{{ content.text }}</p>
-                    </div>
+
+                        <!-- index -->
+                        <div class="section-counter">{{ index | padding }}</div>
+                        
+                    </div> <!-- .section-contents -->
 
                     <!-- Image -->
-                    <div class="column">
+                    <div class="section-image">
                         <img v-if="content.image" :src="require(`@/assets/images/${content.image}`)" 
-                            class="section-image ui fluid image" />
-                    </div>
+                            class="ui fluid image" />
+                    </div> <!-- .section-image -->
 
 
-                </div>
-                    
-               
-            </div>
-        </div>
+                </div> <!-- .section-container -->
+            </div> <!-- .ui.container -->
+        </div> <!-- .section -->
 
 
-    </div>
+    </div> <!-- .about-us -->
 </template>
 
 <script>
@@ -47,6 +49,17 @@
         data() {
             return {
                 contents : ContentsJSON.contents
+            }
+        },
+        filters: {
+
+            //
+            // Prepend zeros at the beginning of an index
+            // 
+
+            padding : function(index) {
+                index++;
+                return index.toString().padStart(2, '0') + '.';
             }
         }
     }

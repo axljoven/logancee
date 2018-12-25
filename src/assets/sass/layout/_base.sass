@@ -1,0 +1,122 @@
+//
+// About Us -------------------------------------------------------------------
+//
+
+.about-us
+    $padding: 175px
+    padding-top: $padding
+    padding-bottom: $padding
+
+    //
+    // Section
+    //
+
+    .section
+        margin-bottom: 100px
+
+    
+        //
+        // Last child
+        //
+
+        &:last-child
+            margin-bottom: 0
+
+
+        //
+        // Text
+        //
+
+        &-text
+            padding-left: 120px
+
+
+
+        //
+        // Counter
+        //
+        
+        &-counter
+            position: absolute
+            bottom: 0
+            color: $color-accent
+            font-size: 1.2rem
+            font-weight: $font-bold
+
+
+
+        //
+        // Section Container
+        //
+        
+        &-container
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-between
+            align-items: center
+            align-content: stretch
+            position: relative
+
+
+        //
+        // Section contents
+        //
+
+        &-contents
+            width: 50%
+
+
+        //
+        // Section Image
+        //
+
+        &-image
+            width: 40%
+            position: relative
+            
+            //
+            // Overlapping gray background
+            //
+
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                right: 0
+                top: 0
+                bottom: 0
+                width: 170%
+                height: 100%
+                background-color: transparentize($color-default, 0.9)
+                z-index: -1
+        
+        //
+        // Alternating alignment effect ---------------------------------------
+        //
+
+        &:nth-child(even)
+            text-align: right
+            
+            //
+            // Section container
+            //
+
+            .section-container
+                flex-direction: row-reverse
+
+    
+            //
+            // Section Image
+            //
+
+            .section-image:after
+                left: 0
+
+
+            //
+            // Counter
+            //
+
+            .section-counter
+                right: 0
