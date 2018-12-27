@@ -1,9 +1,15 @@
 //
+// Variables
+//
+
+$padding: 175px
+
+
+//
 // About Us -------------------------------------------------------------------
 //
 
 .about-us
-    $padding: 175px
     padding-top: $padding
     padding-bottom: $padding
 
@@ -120,3 +126,31 @@
 
             .section-counter
                 right: 0
+
+
+
+
+//
+// Recent Works ---------------------------------------------------------------
+//
+
+.recent-works
+    padding-bottom: $padding
+
+    //
+    // Menu
+    //
+
+    .text.menu .item
+        text-transform: uppercase
+        font-weight: $font-bold
+        color: transparentize($color-default, 0.5)
+        @extend %transition
+
+        //
+        // Active Item
+        //
+
+        &.active,
+        &.hover,
+            color: $color-accent

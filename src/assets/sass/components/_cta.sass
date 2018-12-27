@@ -1,0 +1,38 @@
+//
+// CTA ------------------------------------------------------------------------
+//
+
+.cta
+
+    //
+    // Link
+    //
+
+    &.cta_link
+        text-transform: uppercase
+        font-size: 1.5rem
+        font-weight: $font-bold
+        color: $color-accent
+        letter-spacing: 3px
+        @extend %transition
+        
+
+        //
+        // Icon
+        //
+
+        .cta-icon
+            font-size: inherit
+            margin-left: 10px
+            @extend %transition
+
+
+        //
+        // Hover
+        //
+
+        &:hover
+            letter-spacing: 3.3px
+
+        &:hover .cta-icon
+            margin-left: 20px
