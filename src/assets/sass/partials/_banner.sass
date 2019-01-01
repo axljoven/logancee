@@ -43,6 +43,7 @@
     &_content
         font-size: 1rem
 
+
     //
     // Arrow
     //
@@ -52,17 +53,22 @@
         margin-top: 10px
         margin-bottom: 10px
 
-        a
+        a,
+        a:link,
+        a:focus,
+        a:hover,
             $dimension: 20px
-            
+
+            text-decoration: none
             border: 2px solid white
             border-radius: 50px
             margin-top: 50px
-            padding: 3px 2px 2px 2px 
+            // padding: 3px 2px 2px 2px 
+            padding: 12px 
             width: $dimension
             height: $dimension
             z-index: 100
-            color: white
+            color: white !important
 
             display: flex
             align-content: center

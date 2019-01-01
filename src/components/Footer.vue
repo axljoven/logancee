@@ -5,13 +5,13 @@
             <!-- Social Accounts -->
             <ul class="nav justify-content-center social-accounts">
                 <li v-for="(social, index) in socials" :key="index" class="nav-item">
-                    <a class="nav-link" :href="social.link"><span :class="`${social.icon} fa-lg`"></span></a>
+                    <a class="nav-link" :href="social.link"><span :class="`${social.icon} fa-fw`"></span></a>
                 </li>
             </ul>
 
 
             <!-- Footer text -->
-            <p>
+            <p class="copyright">
                 &copy; {{ env['begin-year'] }} 
                 <a :href="env['url']">{{ env['name'] }}</a>. 
                 All rights reserved.

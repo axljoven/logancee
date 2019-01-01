@@ -10,6 +10,12 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 1.9; }
 
+a,
+a:link,
+a:hover,
+a:focus {
+  text-decoration: none; }
+
 .shadow, #site-header.filled {
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05); }
@@ -259,15 +265,19 @@ p {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px; }
-    .banner_arrow a {
+    .banner_arrow a,
+    .banner_arrow a:link,
+    .banner_arrow a:focus,
+    .banner_arrow a:hover {
+      text-decoration: none;
       border: 2px solid white;
       border-radius: 50px;
       margin-top: 50px;
-      padding: 3px 2px 2px 2px;
+      padding: 12px;
       width: 20px;
       height: 20px;
       z-index: 100;
-      color: white;
+      color: white !important;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -287,9 +297,25 @@ p {
       -ms-transform: translateY(5px);
       transform: translateY(5px); }
 
+#site-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #000000; }
+  #site-footer .social-accounts .nav-link {
+    padding: 10px; }
+  #site-footer .social-accounts .nav-link > span {
+    color: white !important; }
+  #site-footer .copyright {
+    text-align: center;
+    margin-bottom: 0; }
+    #site-footer .copyright a {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: white; }
+
 .main {
-  padding-top: 140px;
-  padding-bottom: 140px; }
+  padding-top: 120px;
+  padding-bottom: 30px; }
 
 .about-us {
   padding-top: 60px;
