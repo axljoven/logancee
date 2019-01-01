@@ -3,6 +3,11 @@
 //
 
 .cta
+    &:focus,
+    &:link,
+    &:hover
+        text-decoration: none
+        position: relative
 
     //
     // Link
@@ -15,6 +20,17 @@
         color: $color-accent
         letter-spacing: 3px
         @extend %transition
+
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            left: 0
+            right: 0
+            height: 2px
+            width: 20%
+            background-color: $color-accent
+            @extend %transition
         
 
         //
@@ -31,8 +47,8 @@
         // Hover
         //
 
-        &:hover
-            letter-spacing: 3.3px
+        &:hover:after
+            width: 100%
 
         &:hover .cta-icon
             margin-left: 20px

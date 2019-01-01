@@ -1,8 +1,26 @@
 <template>
-    <div class="clients"
+    <div class="clients">
+        <div class="container">
+            <div class="row">
+
+                <div v-for="(client, index) in clients" :key="index" class="col">
+                    <img :src="require(`@/assets/images/clients/${client.image}`)" :alt="client.name" class="client-image">
+                </div>
+
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
+
+    //
+    // Imports ----------------------------------------------------------------
+    //
+
+    import ClientsJSON from '@/data/clients.json';
+
+
     //
 	// Export -----------------------------------------------------------------
 	//
@@ -11,34 +29,7 @@
         name: "Clients",
         data() {
             return {
-
-                //
-                // Clients ----------------------------------------------------
-                //
-
-                clients: [
-                    { 
-                        name : "sunset", 
-                        img  : ""
-                    },
-                    { 
-                        name : "balvin-restaurant", 
-                        img  : ""
-                    },
-                    { 
-                        name : "ny", 
-                        img  : ""
-                    },
-                    { 
-                        name : "gourmet-place", 
-                        img  : ""
-                    },
-                    { 
-                        name : "the-mountains", 
-                        img  : ""
-                    },
-                ]
-
+                clients : ClientsJSON.clients
             }
         }
     }

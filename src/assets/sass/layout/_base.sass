@@ -2,7 +2,17 @@
 // Variables
 //
 
-$padding: 175px
+$padding: 60px
+
+
+//
+// Main | contents after the banner -------------------------------------------
+//
+
+.main
+    padding-top: 140px
+    padding-bottom: 140px
+
 
 
 //
@@ -135,22 +145,53 @@ $padding: 175px
 //
 
 .recent-works
+    padding-top: $padding
     padding-bottom: $padding
 
     //
     // Menu
     //
+    
+    .category-nav
+        margin-bottom: 20px
 
-    .text.menu .item
+    .category-nav a.nav-link.item
         text-transform: uppercase
         font-weight: $font-bold
         color: transparentize($color-default, 0.5)
         @extend %transition
 
         //
+        // First and Last item
+        //
+
+        &:first-child
+            padding-left: 0
+
+        &:last-child
+            padding-right: 0
+
+        //
         // Active Item
         //
 
         &.active,
-        &.hover,
+        &:hover,
             color: $color-accent
+
+
+
+//
+// CLients --------------------------------------------------------------------
+//
+
+.clients
+    padding-top: $padding
+    padding-bottom: $padding
+
+    //
+    // Single client image
+    //
+
+    .col
+        text-align: center

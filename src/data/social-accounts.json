@@ -1,0 +1,19 @@
+{
+    "social-accounts" : [
+        {
+            "name" : "Facebook",
+            "link" : "#",
+            "icon" : "fab fa-facebook-f"
+        },
+        {
+            "name" : "Twitter",
+            "link" : "#",
+            "icon" : "fab fa-twitter"
+        },
+        {
+            "name" : "Instagram",
+            "link" : "#",
+            "icon" : "fab fa-instagram"
+        }
+    ]
+}

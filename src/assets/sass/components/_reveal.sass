@@ -1,0 +1,84 @@
+//
+// Reveal | An image (media) that reveals a content when hovered --------------
+//
+
+.reveal
+    position: relative
+    overflow: hidden
+    margin-bottom: 40px
+
+    //
+    // Image
+    //
+    
+    &-image 
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: center
+        align-items: center
+        align-content: stretch
+        height: 200px
+
+        img
+            width: 110%
+            // height: auto
+            @extend %transition
+
+        
+    
+    //
+    // Content
+    //
+    
+    &-content
+        padding: 10px
+
+        background: rgb(0,0,0)
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,0.76234243697479) 0%, rgba(255,255,255,0) 91%)
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.76234243697479) 0%, rgba(255,255,255,0) 91%)
+        background: linear-gradient(0deg, rgba(0,0,0,0.76234243697479) 0%, rgba(255,255,255,0) 91%)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1)
+
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+
+        transform: translateY(100%)
+        @extend %transition
+
+
+
+    //
+    // Title
+    //
+    
+    &-title
+        font-size: 1.2rem
+        text-transform: uppercase
+        margin-bottom: 0
+        color: white
+
+    //
+    // Meta
+    //
+
+    &-meta
+        font-size: .85rem
+        text-transform: capitalize
+        margin-bottom: 0
+        color: white
+
+    //
+    // Hover
+    // - Reveal the content on hover
+    // - Enlarge image
+    //
+
+    &:hover
+        .reveal-content
+            transform: translateY(0)
+
+        .reveal-image img
+            width: 150%

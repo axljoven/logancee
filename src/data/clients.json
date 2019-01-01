@@ -1,0 +1,24 @@
+{
+    "clients" : [
+        {
+            "name" : "Sunset",
+            "image" : "sunset.png"
+        },
+        {
+            "name" : "Balvin",
+            "image" : "balvin.png"
+        },
+        {
+            "name" : "NY",
+            "image" : "ny.png"
+        },
+        {
+            "name" : "Gourmet Place",
+            "image" : "gourmet-place.png"
+        },
+        {
+            "name" : "The Mountains",
+            "image" : "the-mountains.png"
+        }
+    ]
+}

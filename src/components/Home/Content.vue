@@ -3,7 +3,7 @@
         
         <!-- About Us -->
         <div v-for="(content, index) in contents" :key="index" class="section">
-            <div class="ui container">
+            <div class="container">
                 <div class="section-container">
                     
                     <!-- Contents -->
@@ -20,7 +20,7 @@
                     <!-- Image -->
                     <div class="section-image">
                         <img v-if="content.image" :src="require(`@/assets/images/${content.image}`)" 
-                            class="ui fluid image" />
+                            class="w-100" />
                     </div> <!-- .section-image -->
 
 

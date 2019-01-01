@@ -2,8 +2,12 @@
 	<div class="home">
 
 		<Banner />
-		<Content />
-		<RecentWorks />
+
+		<div class="main">
+			<Content />
+			<RecentWorks />
+			<Clients />
+		</div>
 
   	</div>
 </template>
@@ -16,6 +20,7 @@
 	import Banner from "@/components/Banner.vue";
 	import Content from "@/components/Home/Content.vue";
 	import RecentWorks from "@/components/Home/RecentWorks";
+	import Clients from "@/components/Clients";
 
 	//
 	// Export -----------------------------------------------------------------
@@ -26,7 +31,8 @@
 		components: {
 			Banner,
 			Content,
-			RecentWorks
+			RecentWorks,
+			Clients,
 		},
 	};
 </script>

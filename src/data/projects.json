@@ -1,5 +1,44 @@
 {
-    "projects": [{
-        "name": ""
-    }]
+    "projects": [
+        {
+            "name" : "Beach",
+            "category" : "photography",
+            "image" : "beach-blue-coast.jpg"
+        },
+        {
+            "name" : "Wildslope",
+            "category" : "branding",
+            "image" : "beanie-beauty.jpg"
+        },
+        {
+            "name" : "Blue Flora",
+            "category" : "photography",
+            "image" : "beautiful-blue-flora.jpg"
+        },
+        {
+            "name" : "Black and white branches",
+            "category" : "photography",
+            "image" : "branches.jpg"
+        },
+        {
+            "name" : "Blank Business",
+            "category" : "photography",
+            "image" : "blank-business-composition.jpg"
+        },
+        {
+            "name" : "Notebook",
+            "category" : "photography",
+            "image" : "blank-notebook.jpg"
+        },
+        {
+            "name" : "Stairs",
+            "category" : "photography",
+            "image" : "stairs.jpg"
+        },
+        {
+            "name" : "Woman",
+            "category" : "photography",
+            "image" : "woman.jpg"
+        }
+    ]
 }
