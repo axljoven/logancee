@@ -1,5 +1,5 @@
 //
-// Footer ---------------------------------------------------------------------
+// FOOTER ---------------------------------------------------------------------
 //
 
 #site-footer
@@ -9,19 +9,41 @@
     background-color: $color-accent
 
     //
-    // Social Accounts
+    // SOCIAL ACCOUNTS
     //
 
     .social-accounts 
+
+        //
+        // LINK | li > a
+        //
         .nav-link
             padding: 10px
-            
+        
+        //
+        // ICON | li > a > span
+        //
         .nav-link > span
             color: white !important 
+            +transition(0.18)
+
+        //
+        // LIST | ul > li
+        //
+            
+        .nav-item
+            @extend %transition
+
+            &:hover
+                transform: translateY(-5px)
+                background-color: white
+
+                .nav-link > span
+                    color: $color-accent !important
 
     
     //
-    // Copyright
+    // COPYRIGHT
     //
 
     .copyright

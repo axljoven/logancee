@@ -18,11 +18,12 @@
                 <div class="row">
                     <div v-for="(project, index) in projects" :key="index" class="col-12 col-md-6 col-lg-4">
                         
+                        <a href="#">
                         <article class="reveal">
 
                             <!-- Image -->
                             <div class="reveal-image">
-                                <img class="" :src="require(`@/assets/images/projects/${project.image}`)" :alt="project.name">
+                                <img class="" :src="require(`@/assets/images/projects/${project['full-image']}`)" :alt="project.name">
                             </div>
 
                             <!-- Content -->
@@ -33,6 +34,7 @@
 
 
                         </article>
+                        </a>
 
                     </div> <!-- .four.wide.column -->
                 </div> <!-- .ui.stackable.grid.container -->
@@ -40,7 +42,7 @@
 
             <!-- View All Projects link -->
             <a href="#" class="cta cta_link">
-                View All Projects <span class="cta-icon fas fa-long-arrow-alt-right"></span>
+                View All Projects <span class="cta-icon fa-fas fa-angle-right"></span>
             </a>
 
 

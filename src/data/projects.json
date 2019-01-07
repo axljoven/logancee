@@ -3,42 +3,50 @@
         {
             "name" : "Beach",
             "category" : "photography",
-            "image" : "beach-blue-coast.jpg"
+            "thumbnail-image" : "beach-blue-coast.jpg",
+            "full-image" : "beach-blue-coast.jpg"
         },
         {
             "name" : "Wildslope",
             "category" : "branding",
-            "image" : "beanie-beauty.jpg"
+            "thumbnail-image" : "beanie-beauty.jpg",
+            "full-image" : "beanie-beauty.jpg"
         },
         {
             "name" : "Blue Flora",
             "category" : "photography",
-            "image" : "beautiful-blue-flora.jpg"
+            "thumbnail-image" : "beautiful-blue-flora.jpg",
+            "full-image" : "beautiful-blue-flora.jpg"
         },
         {
             "name" : "Black and white branches",
             "category" : "photography",
-            "image" : "branches.jpg"
+            "thumbnail-image" : "branches.jpg",
+            "full-image" : "branches.jpg"
         },
         {
             "name" : "Blank Business",
             "category" : "photography",
-            "image" : "blank-business-composition.jpg"
+            "thumbnail-image" : "blank-business-composition.jpg",
+            "full-image" : "blank-business-composition.jpg"
         },
         {
             "name" : "Notebook",
             "category" : "photography",
-            "image" : "blank-notebook.jpg"
+            "thumbnail-image" : "blank-notebook.jpg",
+            "full-image" : "blank-notebook.jpg"
         },
         {
             "name" : "Stairs",
             "category" : "photography",
-            "image" : "stairs.jpg"
+            "thumbnail-image" : "stairs.jpg",
+            "full-image" : "stairs.jpg"
         },
         {
             "name" : "Woman",
             "category" : "photography",
-            "image" : "woman.jpg"
+            "thumbnail-image" : "woman.jpg",
+            "full-image" : "woman.jpg"
         }
     ]
 }

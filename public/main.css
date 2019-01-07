@@ -21,14 +21,13 @@ a:focus {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05); }
 
 .transition, .cta.cta_link, .cta.cta_link:after, .cta.cta_link .cta-icon, .reveal-image img, .reveal-content, #site-header, #site-header .brand,
-#site-header .burger-menu, .recent-works .category-nav a.nav-link.item {
+#site-header .burger-menu, #site-footer .social-accounts .nav-item, .recent-works .category-nav a.nav-link.item {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s; }
 
 .swiper-container .swiper-slide-contents {
   width: 40%; }
-
 .swiper-container .swiper-slide {
   background-color: #000000; }
 
@@ -102,7 +101,6 @@ a:focus {
 .cta:focus, .cta:link, .cta:hover {
   text-decoration: none;
   position: relative; }
-
 .cta.cta_link {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -110,7 +108,7 @@ a:focus {
   color: #000000;
   letter-spacing: 3px; }
   .cta.cta_link:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     left: 0;
@@ -148,18 +146,18 @@ a:focus {
     align-items: center;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
-    height: 200px; }
+    height: 250px; }
     .reveal-image img {
-      width: 110%; }
+      height: 100%; }
   .reveal-content {
     padding: 10px;
     background: black;
-    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.762342) 0%, rgba(255, 255, 255, 0) 91%);
-    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.762342) 0%, rgba(255, 255, 255, 0) 91%);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.762342)), color-stop(91%, rgba(255, 255, 255, 0)));
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.762342) 0%, rgba(255, 255, 255, 0) 91%);
-    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.762342) 0%, rgba(255, 255, 255, 0) 91%);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.762342) 0%, rgba(255, 255, 255, 0) 91%);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.762342437) 0%, rgba(255, 255, 255, 0) 91%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.762342437) 0%, rgba(255, 255, 255, 0) 91%);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.762342437)), color-stop(91%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.762342437) 0%, rgba(255, 255, 255, 0) 91%);
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.762342437) 0%, rgba(255, 255, 255, 0) 91%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.762342437) 0%, rgba(255, 255, 255, 0) 91%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
     position: absolute;
     bottom: 0;
@@ -174,7 +172,7 @@ a:focus {
     margin-bottom: 0;
     color: white; }
   .reveal-meta {
-    font-size: .85rem;
+    font-size: 0.85rem;
     text-transform: capitalize;
     margin-bottom: 0;
     color: white; }
@@ -183,7 +181,7 @@ a:focus {
     -ms-transform: translateY(0);
     transform: translateY(0); }
   .reveal:hover .reveal-image img {
-    width: 150%; }
+    height: 110%; }
 
 #site-header {
   display: -webkit-box;
@@ -304,7 +302,17 @@ a:focus {
   #site-footer .social-accounts .nav-link {
     padding: 10px; }
   #site-footer .social-accounts .nav-link > span {
-    color: white !important; }
+    color: white !important;
+    -webkit-transition: all 0.18s;
+    -o-transition: all 0.18s;
+    transition: all 0.18s; }
+  #site-footer .social-accounts .nav-item:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    background-color: white; }
+    #site-footer .social-accounts .nav-item:hover .nav-link > span {
+      color: #000000 !important; }
   #site-footer .copyright {
     text-align: center;
     margin-bottom: 0; }
@@ -357,7 +365,7 @@ a:focus {
       width: 40%;
       position: relative; }
       .about-us .section-image:after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         right: 0;
@@ -400,3 +408,5 @@ a:focus {
   padding-bottom: 60px; }
   .clients .col {
     text-align: center; }
+
+

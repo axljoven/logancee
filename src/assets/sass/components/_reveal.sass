@@ -1,5 +1,5 @@
 //
-// Reveal | An image (media) that reveals a content when hovered --------------
+// REVEAL | An image (media) that reveals a content when hovered --------------
 //
 
 .reveal
@@ -8,7 +8,7 @@
     margin-bottom: 40px
 
     //
-    // Image
+    // IMAGE
     //
     
     &-image 
@@ -18,17 +18,16 @@
         justify-content: center
         align-items: center
         align-content: stretch
-        height: 200px
+        height: 250px
 
         img
-            width: 110%
-            // height: auto
+            height: 100%
             @extend %transition
 
         
     
     //
-    // Content
+    // CONTENT
     //
     
     &-content
@@ -51,7 +50,7 @@
 
 
     //
-    // Title
+    // TITLE
     //
     
     &-title
@@ -61,7 +60,7 @@
         color: white
 
     //
-    // Meta
+    // META
     //
 
     &-meta
@@ -71,7 +70,7 @@
         color: white
 
     //
-    // Hover
+    // HOVER
     // - Reveal the content on hover
     // - Enlarge image
     //
@@ -81,4 +80,4 @@
             transform: translateY(0)
 
         .reveal-image img
-            width: 150%
+            height: 110%

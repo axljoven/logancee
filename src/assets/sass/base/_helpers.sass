@@ -1,9 +1,9 @@
 //
-// Helper classes -------------------------------------------------------------
+// HELPER CLASSES -------------------------------------------------------------
 //
 
 //
-// Shadows
+// SHADOWS
 //
 
 %shadow
@@ -13,7 +13,7 @@
 
 
 //
-// Default transition effect
+// DEFAULT TRANSITION EFFECT
 //
 
 %transition
@@ -21,4 +21,9 @@
 .transition
     @extend %transition
 
+//
+// MIXIN TRANSITION
+//
 
+=transition ($seconds)
+    transition: all $seconds + s
