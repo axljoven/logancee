@@ -2,6 +2,7 @@
 	<div id="app">
 
 		<Header />
+		<MobileHeader />
 		<router-view/>
 		<Footer />
 
@@ -14,6 +15,7 @@
 	//
 
 	import Header from '@/components/Header.vue';
+	import MobileHeader from '@/components/MobileHeader.vue';
 	import Footer from '@/components/Footer.vue';
 	
 
@@ -25,6 +27,7 @@
 	export default {
 		components: {
 			Header,
+			MobileHeader,
 			Footer
 		}  
 	}

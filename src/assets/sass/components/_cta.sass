@@ -3,17 +3,18 @@
 //
 
 .cta
+    position: relative
     &:focus,
     &:link,
     &:hover
         text-decoration: none
-        position: relative
 
     //
     // LINK
     //
 
     &.cta_link
+        position: relative
         text-transform: uppercase
         font-size: 1.5rem
         font-weight: $font-bold
@@ -27,6 +28,7 @@
             position: absolute
             left: 0
             right: 0
+            bottom: -10px
             height: 2px
             width: 20%
             background-color: $color-accent

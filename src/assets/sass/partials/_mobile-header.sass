@@ -2,4 +2,115 @@
 // MOBILE HEADER --------------------------------------------------------------
 //
 
-.mobile-header
+.site-header-mobile
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	height: 100%
+	width: 100%
+	background-image: linear-gradient(to right top, #000000, #0d080c, #121016, #12171f, #0e1e25)
+	// z-index: -1000
+	// opacity: 1
+
+	display: flex
+	flex-direction: column
+	flex-wrap: nowrap
+	justify-content: center
+	align-items: center
+	align-content: stretch
+
+	//
+	// Menu 
+	//
+
+	.mobile-menu
+		list-style: none
+		margin: 0
+		padding: 0
+
+		//
+		// Menu Items
+		//
+
+		.mobile-menu-items
+			text-transform: uppercase
+			text-align: center
+			padding: 10px 20px
+			display: block
+
+			li
+				font-size: 1.2rem
+				color: rgba(255,255,255,0.3)
+				font-weight: $font-bold
+				@extend %transition
+
+			//
+			// Hover
+			//
+
+			&:hover
+				li
+					color: white
+
+	//
+	// Opened Mobile header
+	//
+
+	&.open
+		z-index: 1000
+		opacity: 1
+
+	
+	//
+	// Close button
+	//
+
+	&-close
+		position: relative
+		margin-top: 40px
+		border: 1px solid #414141
+		border-radius: 50px
+		padding: 20px
+		width: 50px
+		height: 50px
+		opacity: 1
+
+		display: flex
+		align-content: center
+		align-items: center
+		justify-content: center
+
+		+transition(0.3)
+		
+		&:link,
+		&:hover,
+		&:focus
+			color: white
+
+		//
+		// X icon
+		//			
+
+		.icon
+			position: absolute
+			padding: 0
+			+transition(0.15)
+			opacity: 0.4
+
+
+		//
+		// Hover
+		//
+
+		&:hover
+			border-color: white
+			.icon
+				transform: scale(1.5)
+				transform: rotate(90deg)
+				padding-bottom: 3px
+				opacity: 1
+
+
+			
