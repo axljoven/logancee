@@ -19,19 +19,22 @@
 
   	export default {
 		name: "MobileHeader",
+		
 		data() {
 			return {
+				//
+				// Menu links
+				//
+
 				links : [
-					{
-						name: 'home',
-						url: '/',
-					},
-					{
-						name: 'projects',
-						url: '/projects',
-					}
-				]
+					{ name: 'home', url: '/' },
+					{ name: 'projects', url: '/projects' }
+				],				
 			}
-		}  
+		},
+
+		props: {
+			'is-open' : Boolean
+		}
   	}
 </script>
