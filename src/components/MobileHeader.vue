@@ -1,5 +1,5 @@
 <template>
-  <div id="site-header-mobile" class="site-header-mobile open">
+  <div id="site-header-mobile" class="site-header-mobile">
 		<ul class="mobile-menu">
 			<a v-for="(link, index) in links" :key="index" :href="link.url" class="mobile-menu-items">
 				<li>{{ link.name }}</li>
@@ -7,7 +7,9 @@
 		</ul>
 
 		<!-- Close -->
-		<a href="javascript:void(0)" class="site-header-mobile-close"><span class="icon fas fa-times"></span></a>
+		<a href="javascript:void(0)" class="site-header-mobile-close" @click="close_mobile_header()">
+			<span class="icon fas fa-times"></span>
+		</a>
 
   </div>
 </template>
@@ -33,8 +35,10 @@
 			}
 		},
 
-		props: {
-			'is-open' : Boolean
+		methods: {
+			close_mobile_header() {
+				$('.site-header-mobile').toggleClass('open');
+			}
 		}
   	}
 </script>

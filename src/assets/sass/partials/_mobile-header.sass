@@ -21,7 +21,7 @@
 	align-items: center
 	align-content: stretch
 
-	display: none
+	@extend %transition
 
 	//
 	// Menu 
@@ -61,7 +61,7 @@
 	//
 
 	&.open
-		z-index: 1000
+		z-index: 2000
 		opacity: 1
 
 	
