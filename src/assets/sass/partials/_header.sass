@@ -14,7 +14,8 @@
     top: 0
     left: 0
     right: 0
-    z-index: 1000
+    z-index: 900
+    opacity: 1
     @extend %transition
 
 
@@ -51,3 +52,11 @@
     .brand,
     .burger-menu
         color: $color-accent
+
+
+//
+// HIDDEN / it is when mobile header is open to avoid animation conflict ------
+//
+
+#site-header.hide
+    opacity: 0
