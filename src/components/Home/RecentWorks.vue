@@ -23,7 +23,7 @@
 
                             <!-- Image -->
                             <div class="reveal-image">
-                                <img class="" :src="require(`@/assets/images/projects/${project['full-image']}`)" :alt="project.name">
+                                <img class="" :src="require(`@/assets/images/projects/${project['thumbnail-image']}`)" :alt="project.name">
                             </div>
 
                             <!-- Content -->

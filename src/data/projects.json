@@ -3,49 +3,49 @@
         {
             "name" : "Beach",
             "category" : "photography",
-            "thumbnail-image" : "beach-blue-coast.jpg",
+            "thumbnail-image" : "thumbnail-beach-blue-coast.jpg",
             "full-image" : "beach-blue-coast.jpg"
         },
         {
             "name" : "Wildslope",
             "category" : "branding",
-            "thumbnail-image" : "beanie-beauty.jpg",
+            "thumbnail-image" : "thumbnail-beanie-beauty.jpg",
             "full-image" : "beanie-beauty.jpg"
         },
         {
             "name" : "Blue Flora",
             "category" : "photography",
-            "thumbnail-image" : "beautiful-blue-flora.jpg",
+            "thumbnail-image" : "thumbnail-beautiful-blue-flora.jpg",
             "full-image" : "beautiful-blue-flora.jpg"
         },
         {
             "name" : "Black and white branches",
             "category" : "photography",
-            "thumbnail-image" : "branches.jpg",
+            "thumbnail-image" : "thumbnail-branches.jpg",
             "full-image" : "branches.jpg"
         },
         {
             "name" : "Blank Business",
             "category" : "photography",
-            "thumbnail-image" : "blank-business-composition.jpg",
+            "thumbnail-image" : "thumbnail-blank-business-composition.jpg",
             "full-image" : "blank-business-composition.jpg"
         },
         {
             "name" : "Notebook",
             "category" : "photography",
-            "thumbnail-image" : "blank-notebook.jpg",
+            "thumbnail-image" : "thumbnail-blank-notebook.jpg",
             "full-image" : "blank-notebook.jpg"
         },
         {
             "name" : "Stairs",
             "category" : "photography",
-            "thumbnail-image" : "stairs.jpg",
+            "thumbnail-image" : "thumbnail-stairs.jpg",
             "full-image" : "stairs.jpg"
         },
         {
             "name" : "Woman",
             "category" : "photography",
-            "thumbnail-image" : "woman.jpg",
+            "thumbnail-image" : "thumbnail-woman.jpg",
             "full-image" : "woman.jpg"
         }
     ]

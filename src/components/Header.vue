@@ -32,11 +32,6 @@
 		data() {
 			return {
 				
-				//
-				// CHecks if the mobile header is open
-				//
-
-				is_mobile_header_open: false
 			}
 		},
 		         
