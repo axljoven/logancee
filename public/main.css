@@ -154,6 +154,8 @@ a:focus {
     align-content: stretch;
     height: 220px; }
     .reveal-image img {
+      display: block;
+      min-width: 100%;
       width: 100%; }
   .reveal-content {
     padding: 10px;
@@ -187,6 +189,7 @@ a:focus {
     -ms-transform: translateY(0);
     transform: translateY(0); }
   .reveal:hover .reveal-image img {
+    min-width: 110%;
     width: 110%; }
 
 #site-header {
@@ -323,7 +326,6 @@ a:focus {
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        padding-bottom: 3px;
         opacity: 1; }
 
 .banner {

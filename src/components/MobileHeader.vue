@@ -7,7 +7,7 @@
 		</ul>
 
 		<!-- Close -->
-		<a href="javascript:void(0)" class="site-header-mobile-close" @click="close_mobile_header()">
+		<a href="javascript:void(0)" class="site-header-mobile-close">
 			<span class="icon fas fa-times"></span>
 		</a>
 
@@ -20,25 +20,18 @@
 	//
 
   	export default {
-		name: "MobileHeader",
-		
+		name: "MobileHeader",		
+
 		data() {
 			return {
 				//
 				// Menu links
 				//
-
 				links : [
 					{ name: 'home', url: '/' },
 					{ name: 'projects', url: '/projects' }
 				],				
 			}
 		},
-
-		methods: {
-			close_mobile_header() {
-				$('.site-header-mobile').toggleClass('open');
-			}
-		}
   	}
 </script>

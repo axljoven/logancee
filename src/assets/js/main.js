@@ -20,6 +20,17 @@ $(document).ready(function() {
 
     match_height_init();
 
+    //
+    // Initializes the mobile header
+    //
+
+    mobileHeaderOpen();
+
+    //
+    // Closes the mobile header
+    //
+
+    mobileHeaderClose();
     
 });
 

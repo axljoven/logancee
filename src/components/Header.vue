@@ -10,7 +10,7 @@
 
 			<!-- Hamburger Menu -->
 			<div class="burger-menu-container">
-				<a href="javascript:void(0)" class="burger-menu" @click="open_mobile_header">
+				<a href="javascript:void(0)" class="burger-menu">
 					<span class="fas fa-bars fa-lg"></span>
 				</a>
 			</div>
@@ -30,19 +30,8 @@
         name: "Header",
             
 		data() {
-			return {
-				
-			}
+			return {}
 		},
-		         
-		methods: {
-			//
-			// Toggles the Mobile header
-			//
 
-			open_mobile_header() {
-				$('.site-header-mobile').toggleClass('open');
-			}
-		}
 	}
 </script>
