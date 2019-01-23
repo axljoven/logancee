@@ -42,10 +42,6 @@
                 env : ENV,
                 socials : SocialJSON['social-accounts']
             }
-        },
-
-        created() {
-            console.log(ENV);
         }
     }
 

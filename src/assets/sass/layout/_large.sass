@@ -1,0 +1,82 @@
+//
+// About us -------------------------------------------------------------------
+//
+
+.about-us
+
+    //
+    // SECTION
+    //
+
+    .section
+        overflow: hidden
+        position: relative
+        padding: 20px 0
+
+        //
+        // SECTION CONTAINER
+        //
+
+        &-container
+            position: static
+        
+
+        //
+        // SECTION CONTENTS
+        //
+        
+        &-contents
+            width: 65%
+
+        //
+        // SECTION TEXT
+        //
+
+        &-text
+            padding-left: 60px
+
+
+        //
+        // SECTION IMAGE
+        //
+
+        &-image
+            position: absolute
+            right: -130px
+
+        
+        //
+        // SECTION COUNTER
+        //
+
+        &-counter
+            display: none
+
+        
+        //
+        // ALTERNATING ALIGNMENT EFFECT ---------------------------------------
+        //
+        
+        &:nth-child(even)
+            text-align: right
+            
+            //
+            // SECTION IMAGE
+            //
+
+            .section-image
+                left: -130px
+
+
+//
+// REVEAL | An image (media) that reveals a content when hovered --------------
+//
+
+.reveal
+
+    //
+    // IMAGE
+    //
+
+    &-image
+        height: 250px

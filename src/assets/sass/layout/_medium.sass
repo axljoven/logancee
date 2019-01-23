@@ -1,0 +1,69 @@
+//
+// About us -------------------------------------------------------------------
+//
+
+.about-us
+
+    //
+    // SECTION
+    //
+
+    .section
+        padding: 50px 0
+        
+
+        //
+        // SECTION CONTENTS
+        //
+        
+        &-contents
+            width: 100%
+
+        // //
+        // // SECTION TEXT
+        // //
+
+        // &-text
+        //     padding-left: 60px
+
+
+        //
+        // SECTION IMAGE
+        //
+
+        &-image
+            right: -160px
+
+            //
+            // IMAGE
+            //
+            img
+               opacity: 0
+
+            //
+            // OVERLAPPING GRAY BACKGROUND
+            //
+
+            &:after
+                transform: scale(1.5)
+                right: -130px
+
+        //
+        // ALTERNATING ALIGNMENT EFFECT ---------------------------------------
+        //
+        
+        &:nth-child(even)
+            
+            //
+            // SECTION IMAGE
+            //
+
+            .section-image
+                left: -160px
+
+                //
+                // OVERLAPPING GRAY BACKGROUND
+                //
+
+                &:after
+                    left: -130px

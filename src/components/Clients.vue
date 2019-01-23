@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
 
-                <div v-for="(client, index) in clients" :key="index" class="col">
+                <div v-for="(client, index) in clients" :key="index" class="col-xs-12 col">
                     <img :src="require(`@/assets/images/clients/${client.image}`)" :alt="client.name" class="client-image">
                 </div>
 
