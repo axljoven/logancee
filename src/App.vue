@@ -11,13 +11,12 @@
 
 <script>
 	//
-	// Import Header ----------------------------------------------------------
+	// Import -----------------------------------------------------------------
 	//
 
 	import Header from '@/components/Header.vue';
 	import Footer from '@/components/Footer.vue';
 	import MobileHeader from '@/components/MobileHeader.vue';
-	
 
 
 	//
@@ -29,6 +28,16 @@
 			Header,
 			MobileHeader,
 			Footer
-		}  
+		},
+
+		created() {
+			//
+			// Smooth scrolling to anchor tags
+			//
+
+			let scroll = new SmoothScroll('.banner a[href*="#"]', {
+				speed: 500
+			});
+		}
 	}
 </script>

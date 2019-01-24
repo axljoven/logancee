@@ -9,6 +9,7 @@ $offset: 40px
 //
 
 .swiper-container
+
     //
     // CUSTOM: Not included in the default SwiperJS
     // Slider contents container to make the width 50%
@@ -30,7 +31,7 @@ $offset: 40px
 
 .swiper-pagination
     position: absolute
-    width: 500px
+    width: 100%
     margin-left: auto
     margin-right: auto
     bottom: $offset + 15
@@ -60,6 +61,7 @@ $offset: 40px
 .custom-swiper-button-next
     position: absolute
     top: 45%
+    z-index: 10
 
     a,
     a:link,
@@ -78,7 +80,7 @@ $offset: 40px
         color: rgba(255, 255, 255, 0.6)
 
 .custom-swiper-button-prev
-    left: $offset
+    left: $offset - 20
 
 .custom-swiper-button-next
-    right: $offset
+    right: $offset - 20

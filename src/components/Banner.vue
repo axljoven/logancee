@@ -17,7 +17,7 @@
 
 							<!-- Chevron Arrow -->
 							<div class="banner_arrow">
-								<a v-bind:href="slide.link"><span class="fas fa-chevron-down"></span></a>
+								<a v-bind:href="slide.link" data-scroll><span class="fas fa-chevron-down"></span></a>
 							</div>
 
 						</div>

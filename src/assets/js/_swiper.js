@@ -9,6 +9,7 @@ function swiper_init() {
     //
 
     var mySwiper = new Swiper('.banner .swiper-container', {
+        loop: true,
         spaceBetween: 30,
         effect: 'fade',
         pagination: {

@@ -26,13 +26,13 @@
         },
         {
             "name" : "Blank Business",
-            "category" : "photography",
+            "category" : "web design",
             "thumbnail-image" : "thumbnail-blank-business-composition.jpg",
             "full-image" : "blank-business-composition.jpg"
         },
         {
             "name" : "Notebook",
-            "category" : "photography",
+            "category" : "web design",
             "thumbnail-image" : "thumbnail-blank-notebook.jpg",
             "full-image" : "blank-notebook.jpg"
         },

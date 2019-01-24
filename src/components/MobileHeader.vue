@@ -9,6 +9,7 @@
 		<!-- Close -->
 		<a href="javascript:void(0)" class="site-header-mobile-close">
 			<span class="icon fas fa-times"></span>
+			<span class="text">Close</span>
 		</a>
 
   </div>
@@ -29,7 +30,8 @@
 				//
 				links : [
 					{ name: 'home', url: '/' },
-					{ name: 'projects', url: '/projects' }
+					{ name: 'projects', url: '/projects' },
+					{ name: 'about the developer', url: '/about' }
 				],				
 			}
 		},

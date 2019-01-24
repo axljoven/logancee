@@ -2,17 +2,17 @@
     "social-accounts" : [
         {
             "name" : "Facebook",
-            "link" : "#",
+            "link" : "javascript:void(0)",
             "icon" : "fab fa-facebook-f"
         },
         {
             "name" : "Twitter",
-            "link" : "#",
+            "link" : "javascript:void(0)",
             "icon" : "fab fa-twitter"
         },
         {
             "name" : "Instagram",
-            "link" : "#",
+            "link" : "javascript:void(0)",
             "icon" : "fab fa-instagram"
         }
     ]

@@ -1,5 +1,5 @@
 <template>
-    <div class="about-us">
+    <div id="about-us-quick" class="about-us">
         
         <!-- About Us -->
         <div v-for="(content, index) in contents" :key="index" class="section">
