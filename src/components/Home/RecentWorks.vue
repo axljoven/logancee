@@ -16,7 +16,7 @@
             <!-- Projects -->
             <div class="projects">
                 <div class="row">
-                    <div v-for="project in projects" :key="project.name" class="col-12 col-md-6 col-lg-4">
+                    <div v-for="project in defaultProjects" :key="project.name" class="col-12 col-md-6 col-lg-4">
                         
                         <!-- <div v-if="currentFilter === project.category || currentFilter === 'all'" > -->
                             <a href="#">
@@ -70,7 +70,8 @@
         name: 'RecentWorks',
         data() {
             return {
-                projects : ProjectsJSON.projects,
+                defaultProjects : ProjectsJSON.projects,
+                filteredProjects: null,
                 categories : [
                     'all',
                     'photography',
@@ -85,10 +86,18 @@
         methods: {
             setFilter: function(category) {
                 this.currentFilter = category
-                console.log(this.currentFilter)
+                let filtered = null
 
-                let filtered = this.projects.filter(proj => proj.category === this.currentFilter)
-                console.log(filtered)
+                if (category === 'all') {
+                    this.filteredProjects = this.defaultProjects
+                } else {
+                    this.filteredProjects = this.defaultProjects.filter(proj => proj.category === this.currentFilter)
+                }
+
+                
+                console.clear()
+                console.log(this.currentFilter)
+                console.log(this.filteredProjects)
             },
 
         },
