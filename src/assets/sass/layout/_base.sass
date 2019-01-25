@@ -180,6 +180,24 @@ $padding: 60px
         &:hover,
             color: $color-accent
 
+    //
+    // RECENT WORKS ANIMATION
+    //
+
+    .projects-enter
+        transform: scale(0.5) translatey(-80px)
+        opacity: 0
+    
+
+    .projects-leave-to
+        transform: translatey(30px)
+        opacity: 0
+    
+
+    .projects-leave-active
+        position: absolute
+        z-index: -1
+    
 
 
 //

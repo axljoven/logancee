@@ -16,29 +16,27 @@
             <!-- Projects -->
             <div class="projects">
                 <div class="row">
-                    <div v-for="project in defaultProjects" :key="project.name" class="col-12 col-md-6 col-lg-4">
-                        
-                        <!-- <div v-if="currentFilter === project.category || currentFilter === 'all'" > -->
-                            <a href="#">
-                                <article class="reveal">
+                            <div v-for="project in filteredProjects" :key="project.name" class="col-12 col-md-6 col-lg-4">
+                            
+                                <a href="#">
+                                    <article class="reveal">
 
-                                    <!-- Image -->
-                                    <div class="reveal-image">
-                                        <img class="" :src="require(`@/assets/images/projects/${project['thumbnail-image']}`)" :alt="project.name">
-                                    </div>
+                                        <!-- Image -->
+                                        <div class="reveal-image">
+                                            <img class="" :src="require(`@/assets/images/projects/${project['thumbnail-image']}`)" :alt="project.name">
+                                        </div>
 
-                                    <!-- Content -->
-                                    <div class="reveal-content">
-                                        <h1 class="reveal-title">{{ project.name }}</h1>
-                                        <p class="reveal-meta">{{ project.category }}</p>
-                                    </div>
+                                        <!-- Content -->
+                                        <div class="reveal-content">
+                                            <h1 class="reveal-title">{{ project.name }}</h1>
+                                            <p class="reveal-meta">{{ project.category }}</p>
+                                        </div>
 
 
-                                </article>
-                            </a>
-                        <!-- </div>  -->
+                                    </article>
+                                </a>
 
-                    </div> <!-- .four.wide.column -->
+                        </div>
                 </div> <!-- .ui.stackable.grid.container -->
             </div>
 
@@ -70,8 +68,8 @@
         name: 'RecentWorks',
         data() {
             return {
-                defaultProjects : ProjectsJSON.projects,
-                filteredProjects: null,
+                // defaultProjects : ProjectsJSON.projects,
+                filteredProjects: ProjectsJSON.projects,
                 categories : [
                     'all',
                     'photography',
@@ -89,12 +87,11 @@
                 let filtered = null
 
                 if (category === 'all') {
-                    this.filteredProjects = this.defaultProjects
+                    this.filteredProjects = ProjectsJSON.projects
                 } else {
-                    this.filteredProjects = this.defaultProjects.filter(proj => proj.category === this.currentFilter)
+                    this.filteredProjects = ProjectsJSON.projects.filter(proj => proj.category === this.currentFilter)
                 }
 
-                
                 console.clear()
                 console.log(this.currentFilter)
                 console.log(this.filteredProjects)
@@ -102,15 +99,6 @@
 
         },
 
-        computed: {
-            // filteredProjects() {
-            //     let newProjects = this.projects.filter(function(project) {
-            //         return project.category == this.currentFilter
-            //     })
-
-            //     console.log(newProjects)
-            // }
-        }
     }
 
 </script>

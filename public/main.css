@@ -548,6 +548,19 @@ a:focus {
       padding-right: 0; }
     .recent-works .category-nav a.nav-link.item.active, .recent-works .category-nav a.nav-link.item:hover {
       color: #000000; }
+  .recent-works .projects-enter {
+    -webkit-transform: scale(0.5) translatey(-80px);
+    -ms-transform: scale(0.5) translatey(-80px);
+    transform: scale(0.5) translatey(-80px);
+    opacity: 0; }
+  .recent-works .projects-leave-to {
+    -webkit-transform: translatey(30px);
+    -ms-transform: translatey(30px);
+    transform: translatey(30px);
+    opacity: 0; }
+  .recent-works .projects-leave-active {
+    position: absolute;
+    z-index: -1; }
 
 .clients {
   padding-top: 60px;
