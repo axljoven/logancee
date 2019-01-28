@@ -179,26 +179,8 @@ $padding: 60px
         &.active,
         &:hover,
             color: $color-accent
-
-    //
-    // RECENT WORKS ANIMATION
-    //
-
-    .projects-enter
-        transform: scale(0.5) translatey(-80px)
-        opacity: 0
-    
-
-    .projects-leave-to
-        transform: translatey(30px)
-        opacity: 0
-    
-
-    .projects-leave-active
-        position: absolute
-        z-index: -1
-    
-
+            
+            
 
 //
 // CLIENTS --------------------------------------------------------------------
@@ -209,8 +191,11 @@ $padding: 60px
     padding-bottom: $padding
 
     //
-    // SINGLE CLIENT ITEM
+    // SINGLE CLIENT ITEM | SLICK SLIDE
     //
-
-    .col
-        text-align: center
+    
+    .slick-slide
+        // text-align: center
+        img
+            margin-left: auto
+            margin-right: auto

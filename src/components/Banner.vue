@@ -2,21 +2,18 @@
 	<div class="banner">
 		<div class="container">
 
+				<div class="slick-fade">
 
-
-			<!-- Slider main container -->
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-	
+			
 					<!-- Slides -->
-					<div v-for="(slide, index) in slides" v-bind:key="index" class="swiper-slide">
-						<div class="swiper-slide-contents">
-							<h2 class="banner_preheader">{{ slide.preheader }}</h2>
-							<h3 class="banner_header">{{ slide.header }}</h3>
-							<p class="banner_content">{{ slide.content }}</p>
+					<div v-for="(slide, index) in slides" v-bind:key="index" class="banner-slide">
+						<div class="banner-slide-container">
+							<h2 class="banner-preheader">{{ slide.preheader }}</h2>
+							<h3 class="banner-header">{{ slide.header }}</h3>
+							<p class="banner-content">{{ slide.content }}</p>
 
 							<!-- Chevron Arrow -->
-							<div class="banner_arrow">
+							<div class="banner-arrow">
 								<a v-bind:href="slide.link" data-scroll><span class="fas fa-chevron-down"></span></a>
 							</div>
 
@@ -24,23 +21,21 @@
 					</div>
 
 
-				</div>
-			</div> <!-- swiper container -->
-
+				</div> <!-- fade -->
 
 
 			<!-- Custom navigation buttons -->
-			<div class="custom-swiper-button-prev"><a href="javascript:void(0)">prev</a></div>
-			<div class="custom-swiper-button-next"><a href="javascript:void(0)">next</a></div>
+			<div class="slider-button-prev"><a href="javascript:void(0)">prev</a></div>
+			<div class="slider-button-next"><a href="javascript:void(0)">next</a></div>
 
 
 			
 			<!-- Pagination -->
-			<div class="swiper-pagination"></div>
+			<!-- <div class="swiper-pagination"></div> -->
 
 
 
-		</div> <!-- ui container -->
+		</div> <!-- container -->
 	</div> <!-- banner -->
 </template>
 

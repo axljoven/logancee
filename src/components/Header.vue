@@ -1,7 +1,6 @@
 <template>
 	<header id="site-header" class="site-header">
-
-
+		
 			<!-- Logo -->
 			<div class="logo">
 				<a href class="brand">Logancee</a>
@@ -14,7 +13,6 @@
 					<span class="fas fa-bars fa-lg"></span>
 				</a>
 			</div>
-
 
 	</header> <!-- site-header -->
 </template>

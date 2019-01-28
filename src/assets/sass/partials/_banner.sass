@@ -17,10 +17,18 @@
     align-content: stretch
 
     //
+    // SLIDER CONTENT
+    //
+
+    &-slide-container
+        width: 50%
+        font-size: 1rem
+
+    //
     // PREHEADER
     //
 
-    &_preheader
+    &-preheader
         text-transform: uppercase
         font-size: 0.95rem
         font-weight: $font-bold
@@ -30,25 +38,25 @@
     // HEADER
     //
 
-    &_header
+    &-header
         font-size: 4.5rem
         color: $white
         text-transform: uppercase
         line-height: 0.85
 
+
     //
     // CONTENT
     //
 
-    &_content
-        font-size: 1rem
-
+    &-content
+        width: 80%
 
     //
     // ARROW
     //
 
-    &_arrow 
+    &-arrow 
         display: inline-block
         margin-top: 10px
         margin-bottom: 10px
@@ -63,7 +71,6 @@
             border: 2px solid white
             border-radius: 50px
             margin-top: 50px
-            // padding: 3px 2px 2px 2px 
             padding: 12px 
             width: $dimension
             height: $dimension

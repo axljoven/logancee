@@ -8,37 +8,38 @@
 
             <!-- Menu -->
             <nav class="nav category-nav">
-                <a href="javascript:void(0)" v-for="(category, index) in categories" :key="index" class="nav-link item" v-on:click="setFilter(category)">
+                <a href="javascript:void(0)" v-for="(category) in categories" :key="category" class="nav-link item" v-on:click="setFilter(category)">
                     {{ category }}
                 </a>
             </nav>
 
             <!-- Projects -->
             <div class="projects">
-                <div class="row">
-                            <div v-for="project in filteredProjects" :key="project.name" class="col-12 col-md-6 col-lg-4">
-                            
-                                <a href="#">
-                                    <article class="reveal">
+                    
+                    <transition-group name="fade" tag="div" class="row" mode="in-out">
+                        <!-- <div v-for="project in filteredProjects" :key="project.name" class="col-12 col-md-6 col-lg-4"> -->
+                        <div v-for="project in filteredProjects" :key="project.name" class="project-single col-12 col-md-6 col-lg-4">
+                            <a href="#">
+                                <article class="reveal">
 
-                                        <!-- Image -->
-                                        <div class="reveal-image">
-                                            <img class="" :src="require(`@/assets/images/projects/${project['thumbnail-image']}`)" :alt="project.name">
-                                        </div>
+                                    <!-- Image -->
+                                    <div class="reveal-image">
+                                        <img class="" :src="require(`@/assets/images/projects/${project['thumbnail-image']}`)" :alt="project.name">
+                                    </div>
 
-                                        <!-- Content -->
-                                        <div class="reveal-content">
-                                            <h1 class="reveal-title">{{ project.name }}</h1>
-                                            <p class="reveal-meta">{{ project.category }}</p>
-                                        </div>
+                                    <!-- Content -->
+                                    <div class="reveal-content">
+                                        <h1 class="reveal-title">{{ project.name }}</h1>
+                                        <p class="reveal-meta">{{ project.category }}</p>
+                                    </div>
 
 
-                                    </article>
-                                </a>
+                                </article>
+                            </a>
+                        </div> <!-- .col-12 -->
+                    </transition-group>
 
-                        </div>
-                </div> <!-- .ui.stackable.grid.container -->
-            </div>
+            </div> <!-- projects -->
 
             <!-- View All Projects link -->
             <a href="#" class="cta cta_link">

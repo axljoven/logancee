@@ -3,12 +3,6 @@
 //
 
 #site-header
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: space-between
-    align-items: center
-    align-content: stretch
     padding: 36px 50px
     position: fixed
     top: 0
@@ -16,7 +10,21 @@
     right: 0
     z-index: 900
     opacity: 1
+
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    align-content: stretch
     @extend %transition
+
+    //
+    // CONTAINER
+    //
+
+    .container
+        
 
 
     //

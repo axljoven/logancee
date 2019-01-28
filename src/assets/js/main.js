@@ -1,4 +1,4 @@
-//@prepros-append _swiper.js
+//@prepros-append _slick.js
 //@prepros-append _matchHeight.js
 //@prepros-append _site-header.js
 
@@ -9,10 +9,10 @@
 $(document).ready(function() {
 
     //
-    // Swiper Sliders
+    // Slick.js Sliders
     //
 
-    swiper_init();
+    slick_init();
 
     //
     // Match Height JS

@@ -5,36 +5,22 @@
 $offset: 40px
 
 //
-// SWIPER ---------------------------------------------------------------------
+// SLICK JS -------------------------------------------------------------------
 //
 
-.swiper-container
-
-    //
-    // CUSTOM: Not included in the default SwiperJS
-    // Slider contents container to make the width 50%
-    //
-
-    .swiper-slide-contents
-        width: 40%
-
-    //
-    // SINGLE SLIDE
-    //
-
-    .swiper-slide
-        background-color: $color-accent
+.slick-slider
+    margin-bottom: 0 !important
 
 //
 // PAGINATION -----------------------------------------------------------------
 //
 
-.swiper-pagination
+.slick-dots
     position: absolute
     width: 100%
     margin-left: auto
     margin-right: auto
-    bottom: $offset + 15
+    bottom: -100px
     left: 0
     right: 0
 
@@ -42,23 +28,34 @@ $offset: 40px
     // DEFAULT BULLETS
     //
 
-    &-bullet
-        margin: 0 5px
-        background-color: rgba(255, 255, 255, 0.8)
+    li
+        margin: 0
 
-    //
-    // ACTIVE BULLET
-    //
+        // 
+        // BULLET
+        //
 
-    &-bullet-active
-        background-color: white
+        button
+            &::before
+                content: ''
+                font-size: 1rem
+                opacity: 1 !important
+                color: rgba(255, 255, 255, 0.8)
+
+        //
+        // ACTIVE BULLET
+        //
+
+        &.slick-active button::before
+            content: ''
+            color: white
 
 //
 // SWIPER CONTROLS ------------------------------------------------------------
 //
 
-.custom-swiper-button-prev,
-.custom-swiper-button-next
+.slider-button-prev,
+.slider-button-next
     position: absolute
     top: 45%
     z-index: 10
@@ -79,8 +76,8 @@ $offset: 40px
     a:hover
         color: rgba(255, 255, 255, 0.6)
 
-.custom-swiper-button-prev
+.slider-button-prev
     left: $offset - 20
 
-.custom-swiper-button-next
+.slider-button-next
     right: $offset - 20
