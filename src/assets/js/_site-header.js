@@ -35,42 +35,54 @@ function siteHeaderScroll(scroll, offset) {
 // Mobile Header functionality ------------------------------------------------
 //
 
+
 //
-// Toggles the mobile header
+// Open mobile header
 //
 
-function toggleMobileHeader() {
-
-    //
-    // Shows the mobile header
-    //
-
-    $('.site-header-mobile').toggleClass('open');
-
-    //
-    // Hides the primary header because 
-    // it conflicts with the mobile header animation
-    //
-
-	$('.site-header').toggleClass('hide');
+function openMobileHeader() {
+    $('.site-header-mobile').addClass('open');
+    $('.site-header').addClass('hide');
 }
 
 //
-// Triggers the toggleMobileHeader() when burger menu is clicked
+// Close mobile header
 //
 
-function mobileHeaderOpen() {
+function closeMobileHeader() {
+    $('.site-header-mobile').removeClass('open');
+    $('.site-header').removeClass('hide');
+}
+
+
+
+//
+// Initialized the mobile header functions
+//
+
+function mobileHeaderInit() {
+
+    //
+    // Open the mobile header
+    //
+
     $('.burger-menu').on( 'click', function() {
-        toggleMobileHeader();
+        openMobileHeader();
     })
-}
 
-//
-// Closes the mobile header
-//
+    //
+    // Closes the mobile header
+    //
 
-function mobileHeaderClose() {
     $('.site-header-mobile-close').on( 'click', function() {
-        toggleMobileHeader();
+        closeMobileHeader();
     })
+    
+    //
+    // Close the mobile header On Resize
+    //
+    
+    $(window).resize(function() {
+        closeMobileHeader();
+    });
 }

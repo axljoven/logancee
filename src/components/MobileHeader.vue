@@ -1,5 +1,5 @@
 <template>
-  <div id="site-header-mobile" class="site-header-mobile">
+  <div id="site-header-mobile" class="site-header-mobile" :style="backgroundImage('starry-night.jpg')">
 		<ul class="mobile-menu">
 			<a v-for="(link, index) in links" :key="index" :href="link.url" class="mobile-menu-items">
 				<li>{{ link.name }}</li>
@@ -35,5 +35,14 @@
 				],				
 			}
 		},
+
+		methods: {
+			backgroundImage(image) {
+				var style = 'background: url(' + require(`@/assets/images/${image}`) + ') center center no-repeat;';
+				style += 'background-size: cover';
+
+				return style;
+			}
+		}
   	}
 </script>

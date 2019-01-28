@@ -1,30 +1,30 @@
 {
     "slides": [
         {
-            "preheader": "Welcome",
+            "preheader": "About",
             "header": "Logan Creative Studio",
-            "content": "Best digital solutions for your business! Let we bring amazing for you.",
+            "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt numquam quas aut nobis obcaecati.",
             "link": "#about-us-quick",
             "image": "bar.jpg"
         },
         {
-            "preheader": "Welcome 2",
-            "header": "Web Design Philippines",
-            "content": "Best digital solutions for your business! Let we bring amazing for you.",
+            "preheader": "Logancee Blog",
+            "header": "Charity In and out of season",
+            "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt numquam quas aut nobis obcaecati.",
             "link": "#about-us-quick",
             "image": "hands.jpg"
         },
         {
-            "preheader": "Welcome 3",
-            "header": "VueJS and Firebase",
-            "content": "Best digital solutions for your business! Let we bring amazing for you.",
+            "preheader": "Logancee Event",
+            "header": "2018 Concert for a cause",
+            "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt numquam quas aut nobis obcaecati.",
             "link": "#about-us-quick",
             "image": "stage.jpg"
         },
         {
-            "preheader": "Welcome 4",
-            "header": "Future of Javascript Development",
-            "content": "Best digital solutions for your business! Let we bring amazing for you.",
+            "preheader": "Logancee Blog",
+            "header": "Womanhood: A unique role",
+            "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus sunt numquam quas aut nobis obcaecati.",
             "link": "#about-us-quick",
             "image": "woman.jpg"
         }

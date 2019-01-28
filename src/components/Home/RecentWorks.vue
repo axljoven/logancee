@@ -42,7 +42,7 @@
             </div> <!-- projects -->
 
             <!-- View All Projects link -->
-            <a href="#" class="cta cta_link">
+            <a href="javascript:void(0)" class="cta cta_link">
                 View All Projects <span class="cta-icon fas fa-angle-right"></span>
             </a>
 

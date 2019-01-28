@@ -24,13 +24,7 @@ $(document).ready(function() {
     // Initializes the mobile header
     //
 
-    mobileHeaderOpen();
-
-    //
-    // Closes the mobile header
-    //
-
-    mobileHeaderClose();
+    mobileHeaderInit();
     
 });
 
@@ -48,3 +42,5 @@ $(window).scroll(function() {
 
     siteHeaderScroll($(window).scrollTop(), 100);
 });
+
+

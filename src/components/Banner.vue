@@ -53,9 +53,8 @@
 
 		methods: {
 			backgroundImage(image) {
-				var style = 'background: url(' + require(`@/assets/images/banner/${image}`) + ') no-repeat;';
+				var style = 'background: url(' + require(`@/assets/images/banner/${image}`) + ') center center no-repeat;';
 				style += 'background-size: cover';
-				style += 'background-position: center center';
 
 				return style;
 			}
