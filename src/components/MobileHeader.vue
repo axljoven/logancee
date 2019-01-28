@@ -8,7 +8,7 @@
 
 		<!-- Close -->
 		<a href="javascript:void(0)" class="site-header-mobile-close">
-			<span class="icon fas fa-times"></span>
+			<img class="icon" :src="require(`@/assets/images/close.svg`)" alt="">
 			<span class="text">Close</span>
 		</a>
 
