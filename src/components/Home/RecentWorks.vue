@@ -8,8 +8,12 @@
 
             <!-- Menu -->
             <nav class="nav category-nav">
-                <a href="javascript:void(0)" v-for="(category) in categories" :key="category" class="nav-link item" v-on:click="setFilter(category)">
-                    {{ category }}
+                <a href="javascript:void(0)" v-for="(category) in categories" 
+                    :key="category.name" 
+                    class="nav-link item" 
+                    v-on:click="setFilter(category.name)">
+                        <!-- <span :class="['icon', category.icon]"></span> -->
+                        <span class="name">{{ category.name }}</span>
                 </a>
             </nav>
 
@@ -19,7 +23,7 @@
                     <transition-group name="fade" tag="div" class="row" mode="in-out">
                         <!-- <div v-for="project in filteredProjects" :key="project.name" class="col-12 col-md-6 col-lg-4"> -->
                         <div v-for="project in filteredProjects" :key="project.name" class="project-single col-12 col-md-6 col-lg-4">
-                            <a href="#">
+                            <a :href="project.link">
                                 <article class="reveal">
 
                                     <!-- Image -->
@@ -72,11 +76,22 @@
                 // defaultProjects : ProjectsJSON.projects,
                 filteredProjects: ProjectsJSON.projects,
                 categories : [
-                    'all',
-                    'photography',
-                    'branding',
-                    'web design',
-                    'animation'
+                    {   
+                        name: 'all', 
+                        icon: 'fas fa-grip-horizontal'
+                    },
+                    {   
+                        name: 'photography', 
+                        icon: 'fas fa-camera-retro'
+                    },
+                    {   
+                        name: 'branding', 
+                        icon: 'fab fa-shirtsinbulk'
+                    },
+                    {   
+                        name: 'web design', 
+                        icon: 'fas fa-desktop'
+                    },
                 ],
                 currentFilter: 'all'
             }
@@ -92,10 +107,6 @@
                 } else {
                     this.filteredProjects = ProjectsJSON.projects.filter(proj => proj.category === this.currentFilter)
                 }
-
-                console.clear()
-                console.log(this.currentFilter)
-                console.log(this.filteredProjects)
             },
 
         },

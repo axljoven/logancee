@@ -4,49 +4,57 @@
             "name" : "Beach",
             "category" : "photography",
             "thumbnail-image" : "thumbnail-beach-blue-coast.jpg",
-            "full-image" : "beach-blue-coast.jpg"
+            "full-image" : "beach-blue-coast.jpg",
+            "link": "javascript:void(0)"
         },
         {
             "name" : "Wildslope",
             "category" : "branding",
             "thumbnail-image" : "thumbnail-beanie-beauty.jpg",
-            "full-image" : "beanie-beauty.jpg"
+            "full-image" : "beanie-beauty.jpg",
+            "link": "javascript:void(0)"
         },
         {
             "name" : "Blue Flora",
             "category" : "photography",
             "thumbnail-image" : "thumbnail-beautiful-blue-flora.jpg",
-            "full-image" : "beautiful-blue-flora.jpg"
+            "full-image" : "beautiful-blue-flora.jpg",
+            "link": "javascript:void(0)"
         },
         {
             "name" : "Black and white branches",
             "category" : "photography",
             "thumbnail-image" : "thumbnail-branches.jpg",
-            "full-image" : "branches.jpg"
+            "full-image" : "branches.jpg",
+            "link": "javascript:void(0)"
         },
         {
             "name" : "Blank Business",
             "category" : "web design",
             "thumbnail-image" : "thumbnail-blank-business-composition.jpg",
-            "full-image" : "blank-business-composition.jpg"
+            "full-image" : "blank-business-composition.jpg",
+            "link": "javascript:void(0)"
         },
         {
             "name" : "Notebook",
             "category" : "web design",
             "thumbnail-image" : "thumbnail-blank-notebook.jpg",
-            "full-image" : "blank-notebook.jpg"
+            "full-image" : "blank-notebook.jpg",
+            "link": "javascript:void(0)"
         },
         {
             "name" : "Stairs",
             "category" : "photography",
             "thumbnail-image" : "thumbnail-stairs.jpg",
-            "full-image" : "stairs.jpg"
+            "full-image" : "stairs.jpg",
+            "link": "javascript:void(0)"
         },
         {
             "name" : "Woman",
             "category" : "photography",
             "thumbnail-image" : "thumbnail-woman.jpg",
-            "full-image" : "woman.jpg"
+            "full-image" : "woman.jpg",
+            "link": "javascript:void(0)"
         }
     ]
 }

@@ -156,11 +156,38 @@ $padding: 60px
     .category-nav
         margin-bottom: 20px
 
-    .category-nav a.nav-link.item
-        text-transform: uppercase
-        font-weight: $font-bold
-        color: transparentize($color-default, 0.5)
-        @extend %transition
+    .category-nav a.nav-link.item 
+        display: flex
+        align-items: center
+
+        //
+        // CATEGORY NAME and ICON
+        //
+
+        .name,
+        .icon
+            text-transform: uppercase
+            color: transparentize($color-default, 0.5)
+            @extend %transition
+
+        
+
+        //
+        // CATEGORY NAME
+        //
+        
+        .name
+            font-weight: $font-bold
+
+        //
+        // CATEGORY ICON
+        //
+
+        .icon
+            margin-right: 10px
+            font-size: 2rem
+            // display: none
+
 
         //
         // FIRST AND LAST ITEM
@@ -177,9 +204,18 @@ $padding: 60px
         //
 
         &.active,
-        &:hover,
-            color: $color-accent
+        &:hover
+            .name, 
+            .icon
+                color: $color-accent
             
+    //
+    // CTA
+    //
+    
+    .cta
+        display: inline-block
+        margin-top: 20px
             
 
 //

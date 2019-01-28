@@ -28,7 +28,8 @@ a:focus {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05); }
 
 .transition, .cta.cta_link, .cta.cta_link:after, .cta.cta_link .cta-icon, .reveal-image img, .reveal-content, #site-header, #site-header .brand,
-#site-header .burger-menu, .site-header-mobile, .site-header-mobile .mobile-menu .mobile-menu-items li, #site-footer .social-accounts .nav-item, .recent-works .category-nav a.nav-link.item {
+#site-header .burger-menu, .site-header-mobile, .site-header-mobile .mobile-menu .mobile-menu-items li, #site-footer .social-accounts .nav-item, .recent-works .category-nav a.nav-link.item .name,
+.recent-works .category-nav a.nav-link.item .icon {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s; }
@@ -262,7 +263,7 @@ a:focus {
       display: block; }
       .site-header-mobile .mobile-menu .mobile-menu-items li {
         font-size: 1.2rem;
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.6);
         font-weight: 700; }
       .site-header-mobile .mobile-menu .mobile-menu-items:hover li {
         color: white; }
@@ -337,7 +338,7 @@ a:focus {
 
 .banner {
   position: relative;
-  min-height: 700px;
+  min-height: 500px;
   height: 100vh;
   background-color: #000000; }
   .banner-preheader {
@@ -548,15 +549,32 @@ a:focus {
   .recent-works .category-nav {
     margin-bottom: 20px; }
   .recent-works .category-nav a.nav-link.item {
-    text-transform: uppercase;
-    font-weight: 700;
-    color: rgba(153, 153, 153, 0.5); }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .recent-works .category-nav a.nav-link.item .name,
+    .recent-works .category-nav a.nav-link.item .icon {
+      text-transform: uppercase;
+      color: rgba(153, 153, 153, 0.5); }
+    .recent-works .category-nav a.nav-link.item .name {
+      font-weight: 700; }
+    .recent-works .category-nav a.nav-link.item .icon {
+      margin-right: 10px;
+      font-size: 2rem; }
     .recent-works .category-nav a.nav-link.item:first-child {
       padding-left: 0; }
     .recent-works .category-nav a.nav-link.item:last-child {
       padding-right: 0; }
-    .recent-works .category-nav a.nav-link.item.active, .recent-works .category-nav a.nav-link.item:hover {
+    .recent-works .category-nav a.nav-link.item.active .name,
+    .recent-works .category-nav a.nav-link.item.active .icon, .recent-works .category-nav a.nav-link.item:hover .name,
+    .recent-works .category-nav a.nav-link.item:hover .icon {
       color: #000000; }
+  .recent-works .cta {
+    display: inline-block;
+    margin-top: 20px; }
 
 .clients {
   padding-top: 60px;
@@ -592,6 +610,8 @@ a:focus {
   .slider-button-prev,
   .slider-button-next {
     display: none; }
+  .banner .banner-slide .banner-slide-container {
+    width: 90%; }
   .about-us .section {
     padding: 50px 0; }
     .about-us .section-contents {
@@ -608,24 +628,43 @@ a:focus {
     .about-us .section:nth-child(even) .section-image {
       left: -160px; }
       .about-us .section:nth-child(even) .section-image:after {
-        left: -130px; } }
+        left: -130px; }
+  .recent-works .reveal {
+    margin-bottom: 10px; } }
 
 @media (max-width: 576px) {
   #site-header,
   #site-header.filled {
     padding-left: 15px;
     padding-right: 15px; }
+  .site-header-mobile-close {
+    top: 30px;
+    right: 18px; }
   .header {
     font-size: 3rem; }
+  .cta.cta_link {
+    font-size: 1rem; }
+  .banner-header {
+    font-size: 3.5rem; }
   .about-us .section-image:after {
     -webkit-transform: scale(2);
     -ms-transform: scale(2);
-    transform: scale(2); } }
+    transform: scale(2); }
+  .recent-works {
+    margin-top: 60px; } }
 
 @media (max-width: 425px) {
+  .banner-header {
+    font-size: 2.8rem; }
+  .header {
+    font-size: 2.5rem; }
   .about-us .section {
     padding: 0; }
     .about-us .section-text {
       padding: 0; }
     .about-us .section-image:after {
-      display: none; } }
+      -webkit-transform: scale(2.2);
+      -ms-transform: scale(2.2);
+      transform: scale(2.2); }
+  .recent-works .reveal-image {
+    height: 200px; } }
