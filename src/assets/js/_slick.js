@@ -14,9 +14,9 @@ function slick_init() {
       speed: 500,
       fade: true,
       cssEase: 'linear',
-      draggable: false,
-      autoplay: false,
-      autoplaySpeed: 2000,
+      draggable: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
       arrows: false,
     })
 

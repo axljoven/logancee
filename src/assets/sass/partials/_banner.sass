@@ -4,25 +4,10 @@
 
 .banner
     position: relative
-    padding-top: 40px
-    padding-bottom: 40px
     min-height: 700px
     height: 100vh
     background-color: $color-accent
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    justify-content: flex-start
-    align-items: center
-    align-content: stretch
 
-    //
-    // SLIDER CONTENT
-    //
-
-    &-slide-container
-        width: 50%
-        font-size: 1rem
 
     //
     // PREHEADER
@@ -87,3 +72,67 @@
         &:hover
             a
                 transform: translateY(5px)
+
+    //
+    // SLIDER -----------------------------------------------------------------
+    //
+
+    .slick-fade,
+    .slick-list,
+    .slick-track,
+    .slick-slide > div:first-child
+        height: 100%
+
+    .banner-slide
+        display: flex !important
+        justify-content: center
+        align-items: center
+        height: 100%
+
+        .banner-slide-container
+            width: 50%
+            
+
+
+        //
+        // SLIDER CONTAINER
+        //
+
+        &-slide-container
+            width: 50%
+            font-size: 1rem
+
+    //
+    // SLIDER CONTROLS ------------------------------------------------------------
+    //
+    
+    .slick-dots
+        bottom: 20px
+
+    .slider-button-prev,
+    .slider-button-next
+        position: absolute
+        top: 45%
+        z-index: 10
+
+        a,
+        a:link,
+        a:focus,
+        a:visited
+            display: block
+            writing-mode: vertical-lr
+            text-orientation: upright
+            color: rgba(255, 255, 255, 0.3)
+            text-transform: uppercase
+            transition: color 0.4s
+            font-size: 0.7rem
+            font-weight: $font-bold
+
+        a:hover
+            color: rgba(255, 255, 255, 0.6)
+
+    .slider-button-prev
+        left: $offset - 20
+
+    .slider-button-next
+        right: $offset - 20

@@ -20,7 +20,6 @@ $offset: 40px
     width: 100%
     margin-left: auto
     margin-right: auto
-    bottom: -100px
     left: 0
     right: 0
 
@@ -29,55 +28,32 @@ $offset: 40px
     //
 
     li
-        margin: 0
+        width: 10px
+        height: 10px
+        margin: 0 4px
 
         // 
         // BULLET
         //
 
         button
+            width: 10px
+            height: 10px
             &::before
-                content: ''
-                font-size: 1rem
-                opacity: 1 !important
-                color: rgba(255, 255, 255, 0.8)
+                content: ""
+                display: block
+                width: 10px
+                height: 10px
+                border: 1px solid white
+                border-radius: 50px
+                opacity: 1
 
         //
         // ACTIVE BULLET
         //
 
         &.slick-active button::before
-            content: ''
-            color: white
+            background-color: white
+            opacity: 1 !important
 
-//
-// SWIPER CONTROLS ------------------------------------------------------------
-//
 
-.slider-button-prev,
-.slider-button-next
-    position: absolute
-    top: 45%
-    z-index: 10
-
-    a,
-    a:link,
-    a:focus,
-    a:visited
-        display: block
-        writing-mode: vertical-lr
-        text-orientation: upright
-        color: rgba(255, 255, 255, 0.3)
-        text-transform: uppercase
-        transition: color 0.4s
-        font-size: 0.7rem
-        font-weight: $font-bold
-
-    a:hover
-        color: rgba(255, 255, 255, 0.6)
-
-.slider-button-prev
-    left: $offset - 20
-
-.slider-button-next
-    right: $offset - 20
