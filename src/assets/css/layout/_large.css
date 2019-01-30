@@ -1,0 +1,22 @@
+.about-us .section {
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0; }
+  .about-us .section-container {
+    position: static; }
+  .about-us .section-contents {
+    width: 65%; }
+  .about-us .section-text {
+    padding-left: 60px; }
+  .about-us .section-image {
+    position: absolute;
+    right: -130px; }
+  .about-us .section-counter {
+    display: none; }
+  .about-us .section:nth-child(even) {
+    text-align: right; }
+    .about-us .section:nth-child(even) .section-image {
+      left: -130px; }
+
+.reveal-image {
+  height: 250px; }

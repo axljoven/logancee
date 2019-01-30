@@ -31,7 +31,7 @@
 				links : [
 					{ name: 'home', url: '/' },
 					{ name: 'projects', url: 'javascript:void(0)' },
-					{ name: 'about the developer', url: 'javascript:void(0)' }
+					{ name: 'about the developer', url: '/about' }
 				],				
 			}
 		},

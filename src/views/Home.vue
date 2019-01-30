@@ -1,5 +1,6 @@
 <template>
 	<div class="home">
+		<h1 class="d-none">Home</h1>
 
 		<Banner />
 

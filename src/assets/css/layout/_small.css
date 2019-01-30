@@ -1,0 +1,25 @@
+#site-header,
+#site-header.filled {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.site-header-mobile-close {
+  top: 30px;
+  right: 18px; }
+
+.header {
+  font-size: 3rem; }
+
+.cta.cta_link {
+  font-size: 1rem; }
+
+.banner-header {
+  font-size: 3.5rem; }
+
+.about-us .section-image:after {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2); }
+
+.recent-works {
+  margin-top: 60px; }

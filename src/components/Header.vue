@@ -3,7 +3,7 @@
 		
 			<!-- Logo -->
 			<div class="logo">
-				<a href class="brand">Logancee</a>
+				<a href="/" class="brand">Logancee</a>
 			</div>
 
 
