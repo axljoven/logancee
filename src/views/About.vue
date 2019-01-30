@@ -1,8 +1,13 @@
 <template>
     <div class="about">
 
+        <!-- Hide h1 -->
         <h1 class="d-none">About</h1>
 
+        <!-- Banner Image -->
+        <BannerImage :url="bannerURL" />
+
+        <!-- Main content -->
         <div class="main">
             <div class="container">
                 <div class="contents">
@@ -86,6 +91,7 @@
     // IMPORTS ----------------------------------------------------------------
     //
 
+    import BannerImage from "@/components/BannerImage.vue"
     import Avatar from "@/components/Avatar.vue"
     import Skill from "@/components/Skill.vue"
 
@@ -115,7 +121,6 @@
                 ],
                 content : "",
                 avatar: {
-                    // 'url' : '@/assets/images/avatar.jpg',
                     'url' : require('@/assets/images/avatar.jpg'),
                     'alt' : 'Axl Joven | Front-end Developer'
                 },
@@ -140,12 +145,13 @@
                         "name" : "Barone International",
                         "url" : "http://baroneintl.com/"
                     },
-                ]
-
+                ],
+                bannerURL: require('@/assets/images/starry-night.jpg')
             }
         },
 
         components: {
+            BannerImage,
             Avatar,
             Skill
         }

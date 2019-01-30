@@ -1,9 +1,13 @@
 <template>
 	<div class="home">
+
+		<!-- Hide h1 -->
 		<h1 class="d-none">Home</h1>
 
+		<!-- Banner -->
 		<Banner />
 
+		<!-- Main content -->
 		<div class="main">
 			<Content />
 			<RecentWorks />
